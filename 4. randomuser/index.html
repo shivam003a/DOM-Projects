@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .progress {
+            background-color: #0fb811;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 4px;
+        }
+
+        .container {
+            width: 51%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .gtn-user {
+            width: 100%;
+            background-color: #707275;
+            color: white;
+            font-size: 16px;
+            padding: 5px;
+            outline: 0;
+            border: 0;
+        }
+
+        .user-img {
+            width: 120px;
+            border-radius: 50%;
+            margin: 26px 0;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info-name{
+            display: flex;
+        }
+        .info-mail{
+            display: none;
+        }
+        .info-phone{
+            display: none;
+        }
+        .info-add{
+            display: none;
+        }
+        .user-detail {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 26px;
+        }
+
+        .nav {
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 26px 0;
+        }
+
+        .nav img {
+            width: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="progress">RANDOM USER GENERATOR</div>
+        <div class="container">
+            <button class="gtn-user">Generate New User</button>
+            <img class="user-img">
+            <div class="info info-name">
+                <span>Hi, my name is</span>
+                <span class="user-detail name"></span>
+            </div>
+            <div class="info info-mail">
+                <span>My Email address is</span>
+                <span class="user-detail mail"></span>
+            </div>
+            <div class="info info-phone">
+                <span>My phone number is</span>
+                <span class="user-detail phone"></span>
+            </div>
+            <div class="info info-add">
+                <span>My address is</span>
+                <span class="user-detail add"></span>
+            </div>
+
+            <div class="nav">
+                <img src="./images/user.svg" class="nav-btn user-svg">
+                <img src="./images/email.svg" class="nav-btn email-svg">
+                <img src="./images/phone.svg" class="nav-btn phone-svg">
+                <img src="./images/map.svg" class="nav-btn map-svg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
